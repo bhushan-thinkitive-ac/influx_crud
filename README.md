@@ -87,26 +87,3 @@ All the CRUD operations are logged into the `logs.txt` file located in the root 
 2024-10-18 12:37:45,202 - INFO - Queried data for MSFT: [('64.50', 'High'), ('62.13', 'Low')]
 2024-10-18 12:40:09,307 - ERROR - Error occurred while updating data: Stock not found.
 ```
-
-### Step 8: Stop the Project
-
-To stop the project, simply press `Ctrl + C` in your terminal.
-
-## Development
-
-### .gitignore
-
-Ensure the following files and directories are added to your `.gitignore` to avoid pushing them to your repository:
-
-```bash
-# .gitignore
-
-__pycache__/
-venv/
-.env
-logs.txt
-```
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
