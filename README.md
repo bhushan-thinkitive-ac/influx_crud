@@ -1,6 +1,6 @@
-# Stock Price CRUD Operations with InfluxDB
+# Python and InfluxDB CRUD operations
 
-This project demonstrates basic CRUD (Create, Read, Update, Delete) operations for stock price data using InfluxDB. It also includes logging for all operations and stores logs in a `logs.txt` file.
+Basic CRUD operations for stock price data using InfluxDB. Also includes logging for all operations and stores logs in a `logs.txt` file.
 
 ## Features
 
@@ -29,8 +29,6 @@ cd <repository-directory>
 
 ### Step 2: Set Up Virtual Environment (Optional but Recommended)
 
-It is highly recommended to set up a virtual environment for dependency management.
-
 ```bash
 # Create a virtual environment
 python3 -m venv venv
@@ -39,7 +37,7 @@ python3 -m venv venv
 source venv/bin/activate
 
 # Activate the virtual environment (Windows)
-.env\Scriptsctivate
+source venv/Scripts/activate
 ```
 
 ### Step 3: Install Dependencies
@@ -55,10 +53,10 @@ pip install -r requirements.txt
 Create a `.env` file in the project root directory and add the following environment variables to configure your InfluxDB connection details:
 
 ```env
-INFLUXDB_URL=http://localhost:8086
-INFLUXDB_TOKEN=your-influxdb-token
-INFLUXDB_ORG=your-org-name
-INFLUXDB_BUCKET=your-bucket-name
+URL=http://localhost:8086
+TOKEN=your-influxdb-token
+ORG=your-org-name
+BUCKET=your-bucket-name
 ```
 
 ### Step 5: Run the Project
